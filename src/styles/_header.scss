@@ -1,0 +1,41 @@
+.header {
+  text-align: center;
+
+  &__topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid $border-color;
+
+    &-hamburger {
+      display: none;
+
+      @media (max-width: $menu-break-point) {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__title {
+    @include title-font;
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $title-color;
+    max-width: 920px;
+    margin: 140px auto 40px;
+
+    @media (max-width: $menu-break-point) {
+      font-size: 52px;
+    }
+  }
+
+  &__description {
+    color: $description-color;
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,41 @@
+.testimonials {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @media (max-width: $menu-break-point) {
+    grid-template-columns: 1fr;
+  }
+
+  &__img {
+    display: block;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  &__wrapper {
+    background-color: $testimonials-background;
+  }
+
+  &__text {
+    color: $title-color;
+    max-width: 500px;
+    margin: 110px 80px;
+  }
+
+  &__description {
+    @include testimonials-font;
+    font-family: "Cardo", serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+
+    @media (max-width: $medium-break-point) {
+      font-size: 28px;
+    }
+  }
+
+  &__author {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}

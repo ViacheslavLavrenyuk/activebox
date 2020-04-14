@@ -1,0 +1,23 @@
+.button {
+  background-color: $button-color;
+  transition: $transition-duration;
+
+  &-header {
+    border: none;
+    margin: 70px auto 150px;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $title-color;
+    padding: 20px 55px;
+  }
+}
+
+.button:hover {
+  opacity: $hover-opacity;
+}

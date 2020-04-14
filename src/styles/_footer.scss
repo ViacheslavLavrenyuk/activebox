@@ -1,0 +1,50 @@
+.footer {
+  font-size: 14px;
+
+  @media (max-width: $menu-break-point) {
+    &__card:nth-child(2) {
+      padding: 0 20px;
+    }
+  }
+
+  &__card {
+    padding: 40px 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $title-color;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    color: $menu-color;
+    line-height: 1.7;
+  }
+
+  &__link {
+    color: $title-color;
+    text-decoration: none;
+    transition: $transition-duration;
+    border: 2px solid;
+    padding: 10px;
+    margin: 5px;
+    width: 20px;
+  }
+
+  &__description > &__link {
+    font-size: 24px;
+  }
+
+  &__link:hover {
+    color: $menu-color;
+  }
+
+  &__copyright {
+    text-align: center;
+    color: $copyright-color;
+    margin: 0;
+    padding: 30px 0;
+    line-height: 1.8;
+  }
+}

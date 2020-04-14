@@ -1,0 +1,26 @@
+@import "utils";
+@import "wrapper";
+@import "content";
+@import "header";
+@import "navigation";
+@import "button";
+@import "hamburger";
+@import "testimonials";
+@import "footer";
+
+body {
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  min-width: $min-width-screen;
+}
+
+.dots {
+  position: absolute;
+  left: 60%;
+  bottom: 50px;
+
+  @media (max-width: $medium-break-point) {
+    left: 50%;
+  }
+}
