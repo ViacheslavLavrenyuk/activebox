@@ -5,12 +5,19 @@
 @import "navigation";
 @import "button";
 @import "hamburger";
+@import "features";
+@import "works";
+@import "team";
 @import "testimonials";
+@import "download";
 @import "footer";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Raleway", sans-serif;
-  scroll-behavior: smooth;
   margin: 0;
   min-width: $min-width-screen;
 }

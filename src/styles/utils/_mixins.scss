@@ -5,3 +5,9 @@
 @mixin testimonials-font {
   @import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap");
 }
+
+@mixin link {
+  text-decoration: none;
+  transition: $transition-duration;
+  padding: 10px;
+}

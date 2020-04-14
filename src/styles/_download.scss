@@ -1,0 +1,15 @@
+.download {
+  text-align: center;
+
+  &__title {
+    font-size: 28px;
+    font-weight: 300;
+    margin: 100px auto 16px;
+  }
+
+  &__description {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+}

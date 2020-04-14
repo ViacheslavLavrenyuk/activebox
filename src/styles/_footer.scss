@@ -23,13 +23,11 @@
   }
 
   &__link {
-    color: $title-color;
-    text-decoration: none;
-    transition: $transition-duration;
-    border: 2px solid;
-    padding: 10px;
+    @include link;
     margin: 5px;
     width: 20px;
+    color: $title-color;
+    border: 2px solid;
   }
 
   &__description > &__link {

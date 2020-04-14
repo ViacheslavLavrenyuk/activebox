@@ -1,20 +1,29 @@
 .button {
   background-color: $button-color;
   transition: $transition-duration;
+  border: none;
 
   &-header {
-    border: none;
     margin: 70px auto 150px;
+  }
+
+  &-download {
+    margin: 40px auto 100px;
   }
 
   &__link {
     display: inline-block;
+    font-family: "Raleway", sans-serif;
     font-size: 13px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
     color: $title-color;
     padding: 20px 55px;
+  }
+
+  &-download &__link {
+    padding: 20px 80px;
   }
 }
 
